@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "./Form";
 import FilterButton from "./FilterButton";
 import Todo from "./Todo";
+import Nav from './Nav';
 import { nanoid } from "nanoid";
 
 function Main(props) {
@@ -79,6 +80,7 @@ function Main(props) {
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
+      <Nav />
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">
         {filterList}
