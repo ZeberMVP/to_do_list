@@ -29,7 +29,7 @@ function App(props) {
 
   function deleteTask(id) {
     const remainingTasks = tasks.filter((task) => id !== task.id);
-    setTasks(remainingTasks);
+    setTasks(remainingTasks)
   }
 
   function editTask(id, newName) {
