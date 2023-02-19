@@ -1,6 +1,7 @@
 import React from "react";
 import Main from "./components/Main";
 import Home from "./components/Home";
+import Weather from './components/Weather'
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <div className="todoapp stack-large">
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/to-do-list" element={<Main tasks={DATA} />}  />
+                <Route path="/todo" element={<Main tasks={DATA} />}  />
+                <Route path="/weather" element={<Weather />} />
             </Routes>
         </div>
     );
